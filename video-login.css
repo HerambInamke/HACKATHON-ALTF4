@@ -29,25 +29,43 @@ nav {
 
 nav .logo {
     width: 150px;
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    margin: 20px; /* Add some margin for spacing from the edges */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: auto; /* Push the navigation items to the right */
+}
+
+nav ul li {
+    margin-left: 40px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #5B3A29; /* Brown color */
-    font-size: 20px; /* Increased font size */
-    font-weight: 800; /* Increased font weight */
-    padding: 5px 15px; /* Padding for better hover effect visibility */
-    background-color: transparent; /* Default background */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-    border-radius: 5px; /* Optional rounded corners */
+    color: #5B3A29;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 5px 15px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: white; /* White background on hover */
-    color: #5B3A29; /* Keep text color on hover */
+    background-color: white;
+    color: #5B3A29;
 }
-
-/* Rest of your existing CSS remains the same */
 
 
 .content {
